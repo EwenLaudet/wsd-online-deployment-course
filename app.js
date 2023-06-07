@@ -21,8 +21,7 @@ const handleRequest = async (request) => {
   }
 
   if (url.pathname === "/meaning") {
-    data.count++;
-    return new Response(await renderFile("meaning.eta", data), responseDetails);
+    return new Response("Seeking truths beyond meaning of life, you will find 43.");
   }
 
   return new Response("Nothing here yet.");
